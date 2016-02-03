@@ -14,7 +14,9 @@ import java.util.logging.Logger;
 
 public class Main {
     public static void main(String[] args) throws InterruptedException {
-        Logger.getLogger("com.gargoylesoftware").setLevel(Level.OFF);
+        if(args.length == 0) {
+            System.out.println("Please provide a url parameters");
+        }
 
         String formattedUrl;
         if (!args[0].startsWith("http://") || !args[0].startsWith("https://")) {
@@ -22,6 +24,8 @@ public class Main {
         } else {
             formattedUrl = args[0];
         }
+
+        Logger.getLogger("com.gargoylesoftware").setLevel(Level.OFF);
 
         String html = null;
         String domain = null;
