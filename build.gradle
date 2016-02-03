@@ -1,0 +1,20 @@
+group 'java.com.xggity2'
+version '1.0'
+
+apply plugin: 'java'
+apply plugin: 'application'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+mainClassName = "Main"
+
+dependencies {
+    compile 'org.jsoup:jsoup:1.8.3'
+    compile 'net.sourceforge.htmlunit:htmlunit:2.19'
+    compile 'commons-validator:commons-validator:1.5.0'
+}
