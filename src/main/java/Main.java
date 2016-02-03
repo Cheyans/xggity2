@@ -15,7 +15,7 @@ import java.util.logging.Logger;
 public class Main {
     public static void main(String[] args) throws InterruptedException {
         if(args.length == 0) {
-            System.out.println("Please provide a url parameters");
+            System.out.println("Please provide a url parameter");
             System.exit(0);
         }
 
